@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Blackboard Enhancement Suite",
+    "description": "adds an \"unsubscribe\" button to Blackboard courses",
+    "version": "2.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
